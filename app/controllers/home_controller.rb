@@ -5,5 +5,4 @@ class HomeController < ApplicationController
       redirect_to question_path
     end
   end
-
 end
