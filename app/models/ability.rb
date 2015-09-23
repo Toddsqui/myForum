@@ -13,7 +13,11 @@ class Ability
 
         can :destroy, Question do |question|
           question.user == user
-        ends
+        end
+
+        can :destroy, Answer do |answer|
+          answer.user == user
+        end
 
 
         can :create, Question
