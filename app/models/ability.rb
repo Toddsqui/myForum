@@ -5,6 +5,7 @@ class Ability
 
     if user.admin?
 
+      can :manage, :all
 
     else
         can :update, Question do |question|
